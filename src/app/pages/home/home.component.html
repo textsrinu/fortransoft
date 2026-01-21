@@ -1,0 +1,64 @@
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transform Your Business with Expert Software Solutions</h1>
+        <p>We deliver cutting-edge development and consulting services that drive growth and innovation</p>
+        <div class="hero-buttons">
+          <a routerLink="/services" class="btn btn-primary">Explore Services</a>
+          <a routerLink="/contact" class="btn btn-secondary">Get Started</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-block">
+          <div class="code-line">💻 <span>const innovation = () => {{ '{' }}</span></div>
+          <div class="code-line">  return <span class="success">growth</span> + <span class="success">excellence</span>;</div>
+          <div class="code-line">{{ '}' }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Why Choose FortranSoft</h2>
+      <div class="features-grid">
+        <div *ngFor="let feature of features" class="feature-card">
+          <div class="feature-icon">{{ feature.icon }}</div>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="services-overview">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="section-subtitle">Comprehensive solutions tailored to your needs</p>
+      <div class="services-grid">
+        <div *ngFor="let service of services" class="service-card">
+          <div class="service-icon">{{ service.icon }}</div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+      <div class="services-cta">
+        <a routerLink="/services" class="btn btn-primary">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Let's discuss how we can help you achieve your goals</p>
+      <a routerLink="/contact" class="btn btn-primary">Schedule a Consultation</a>
+    </div>
+  </section>
+</main>
