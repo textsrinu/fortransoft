@@ -2,7 +2,7 @@ version: 1
 build:
   images:
     backend:
-      image: amazonlinux:2023
+      image: Amazon Linux:2023
 frontend:
   phases:
     preBuild:
